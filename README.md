@@ -1,3 +1,14 @@
+Personal Note
+=============
+
+I wanted to test the current state of OpenALPR and compare it with my
+custom proprietary implementation, but I did not want to go back to
+OpenCV 2 or 3. So, I just made a few changes to the original source, so
+that it now compiles with OpenCV4.
+
+There are no separate Licensing terms from me, so use it if you want it
+to work with the said version of the library.
+
 openalpr
 ========
 

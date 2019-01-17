@@ -35,6 +35,7 @@
 #include "alpr.h"
 
 using namespace alpr;
+using namespace cv;
 
 const std::string MAIN_WINDOW_NAME = "ALPR main window";
 
@@ -253,7 +254,7 @@ int main( int argc, const char** argv )
 
         cv::VideoCapture cap = cv::VideoCapture();
         cap.open(filename);
-        cap.set(CV_CAP_PROP_POS_MSEC, seektoms);
+        cap.set(CAP_PROP_POS_MSEC, seektoms);
 
         while (cap.read(frame))
         {
